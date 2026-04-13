@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta -->
+  <title>Podcast | Dr. Diana Londoño MD</title>
+  <meta name="description" content="Listen to Real Talk with Dr. D — Dr. Diana Londoño's podcast on emotional health, intimacy, and medicine. Plus her top guest appearances on leading shows." />
+  <meta name="keywords" content="Dr Diana Londono podcast, Real Talk with Dr D, emotional health podcast, intimacy podcast, physician podcast, women's health, Latina physician podcast" />
+  <meta name="author" content="Dr. Diana Londoño" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://drdianalondono.vercel.app/podcast.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://drdianalondono.vercel.app/podcast.html" />
+  <meta property="og:title" content="Podcast | Dr. Diana Londoño MD" />
+  <meta property="og:description" content="Real Talk with Dr. D — where emotional truth, intimacy, and medicine meet." />
+  <meta property="og:image" content="https://img1.wsimg.com/isteam/ip/a369c3ce-b30d-42e2-9269-49d81a352f27/20241207_154754-1.jpg" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PodcastSeries",
+    "name": "Real Talk with Dr. D",
+    "description": "A podcast exploring the intersection of emotional health, intimacy, connection, and the human experience — for women ready to stop performing and start feeling.",
+    "author": {
+      "@type": "Person",
+      "name": "Dr. Diana Londoño"
+    },
+    "url": "https://drdianalondono.vercel.app/podcast.html"
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="podcast.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="nav-header scrolled" id="nav-header" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" aria-label="Dr. Diana Londoño Home">
+        <span class="logo-name">Dr. Diana Londoño</span>
+        <span class="logo-title">MD · Physician · Speaker · Healer</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-menu" role="list">
+        <li><a href="index.html"           class="nav-link">Home</a></li>
+        <li><a href="index.html#wave"      class="nav-link">The Method</a></li>
+        <li><a href="index.html#services"  class="nav-link">Work With Me</a></li>
+        <li><a href="index.html#about"     class="nav-link">About</a></li>
+        <li><a href="podcast.html"         class="nav-link active">Podcast</a></li>
+        <li><a href="index.html#contact"   class="nav-link">Contact</a></li>
+        <li><a href="index.html#contact"   class="nav-cta">Book Dr. Diana</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero" aria-labelledby="page-hero-heading">
+      <div class="container">
+        <p class="hero-eyebrow reveal">Audio &amp; Conversations</p>
+        <h1 class="hero-headline reveal delay-1">
+          Real Talk.<br /><em>Real Healing.</em>
+        </h1>
+        <p class="hero-subtext reveal delay-2">
+          Where emotional truth, intimacy, and medicine meet.<br />
+          Conversations for women ready to stop performing and start feeling.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== HER OWN PODCAST — COMING SOON ===== -->
+    <section class="own-podcast" id="real-talk" aria-labelledby="own-podcast-heading">
+      <div class="container">
+        <div class="own-podcast-grid">
+
+          <div class="podcast-cover-col">
+            <div class="podcast-cover-placeholder" aria-hidden="true">
+              <div class="cover-inner">
+                <span class="cover-eyebrow">New Podcast</span>
+                <p class="cover-title">Real Talk<br /><em>with Dr. D</em></p>
+                <span class="cover-tag">Coming Soon</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-info-col">
+            <span class="section-eyebrow">Her Own Podcast</span>
+            <h2 class="section-title" id="own-podcast-heading">
+              Real Talk<br /><em>with Dr. D</em>
+            </h2>
+            <p class="podcast-desc">
+              A podcast exploring the intersection of emotional health, intimacy, connection, and the human experience. Through real conversations, clinical insight, and deep truth — this is the show for women ready to stop performing and start feeling.
+            </p>
+            <ul class="podcast-topics" role="list">
+              <li>Emotional health &amp; nervous system regulation</li>
+              <li>Intimacy, desire, and reconnection</li>
+              <li>Love as medicine — the science behind it</li>
+              <li>Conversations with thought leaders &amp; healers</li>
+            </ul>
+
+            <div class="coming-soon-block">
+              <div class="coming-soon-badge">
+                <span class="badge-dot" aria-hidden="true"></span>
+                Launching Soon
+              </div>
+              <p>Sign up to be notified the moment the first episode drops.</p>
+              <form class="notify-form" id="notify-form" novalidate aria-label="Notify me form">
+                <div class="notify-input-row">
+                  <label for="notify-email" class="sr-only">Email Address</label>
+                  <input type="email" id="notify-email" name="email" placeholder="Your email address" autocomplete="email" required />
+                  <button type="submit" class="btn btn-primary">Notify Me</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Platforms — placeholders ready for real links -->
+            <div class="platform-links" aria-label="Listen on">
+              <p class="platform-label">Coming to:</p>
+              <div class="platforms">
+                <span class="platform-pill">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+                  Apple Podcasts
+                </span>
+                <span class="platform-pill">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                  Spotify
+                </span>
+                <span class="platform-pill">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                  YouTube
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GUEST APPEARANCES DIVIDER ===== -->
+    <div class="section-divider" aria-hidden="true">
+      <div class="container">
+        <span class="divider-line"></span>
+        <span class="divider-text">Guest Appearances</span>
+        <span class="divider-line"></span>
+      </div>
+    </div>
+
+    <!-- ===== TOP 10 GUEST APPEARANCES ===== -->
+    <section class="guest-appearances" id="appearances" aria-labelledby="appearances-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Featured On</span>
+          <h2 class="section-title" id="appearances-heading">
+            Top Podcast<br /><em>Guest Appearances</em>
+          </h2>
+          <p class="section-subtitle">
+            Dr. Londoño has been a trusted voice on leading shows across medicine, wellness, and human connection.
+          </p>
+        </div>
+
+        <!-- 
+          ============================================================
+          PLACEHOLDER CONTENT — awaiting Tara's top 10 list
+          Replace each appearance-card's fields with real episode data
+          ============================================================
+        -->
+        <div class="appearances-list" role="list">
+
+          <article class="appearance-card" role="listitem">
+            <div class="appearance-num" aria-hidden="true">01</div>
+            <div class="appearance-body">
+              <div class="appearance-meta">
+                <span class="appearance-show">Show Name — Pending Tara's List</span>
+                <span class="appearance-dot" aria-hidden="true">·</span>
+                <span class="appearance-date">2024</span>
+              </div>
+              <h3 class="appearance-title">Episode title or topic to be added</h3>
+              <p class="appearance-desc">A brief description of the episode and what Dr. Londoño discussed will go here once the list is provided.</p>
+            </div>
+            <a href="#" class="appearance-listen btn btn-accent" target="_blank" rel="noopener noreferrer" aria-label="Listen to episode 1">
+              Listen <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="appearance-card" role="listitem">
+            <div class="appearance-num" aria-hidden="true">02</div>
+            <div class="appearance-body">
+              <div class="appearance-meta">
+                <span class="appearance-show">Show Name — Pending Tara's List</span>
+                <span class="appearance-dot" aria-hidden="true">·</span>
+                <span class="appearance-date">2024</span>
+              </div>
+              <h3 class="appearance-title">Episode title or topic to be added</h3>
+              <p class="appearance-desc">A brief description of the episode and what Dr. Londoño discussed will go here once the list is provided.</p>
+            </div>
+            <a href="#" class="appearance-listen btn btn-accent" target="_blank" rel="noopener noreferrer" aria-label="Listen to episode 2">
+              Listen <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="appearance-card" role="listitem">
+            <div class="appearance-num" aria-hidden="true">03</div>
+            <div class="appearance-body">
+              <div class="appearance-meta">
+                <span class="appearance-show">Show Name — Pending Tara's List</span>
+                <span class="appearance-dot" aria-hidden="true">·</span>
+                <span class="appearance-date">2024</span>
+              </div>
+              <h3 class="appearance-title">Episode title or topic to be added</h3>
+              <p class="appearance-desc">A brief description of the episode and what Dr. Londoño discussed will go here once the list is provided.</p>
+            </div>
+            <a href="#" class="appearance-listen btn btn-accent" target="_blank" rel="noopener noreferrer" aria-label="Listen to episode 3">
+              Listen <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="appearance-card" role="listitem">
+            <div class="appearance-num" aria-hidden="true">04</div>
+            <div class="appearance-body">
+              <div class="appearance-meta">
+                <span class="appearance-show">Show Name — Pending Tara's List</span>
+                <span class="appearance-dot" aria-hidden="true">·</span>
+                <span class="appearance-date">2024</span>
+              </div>
+              <h3 class="appearance-title">Episode title or topic to be added</h3>
+              <p class="appearance-desc">A brief description of the episode and what Dr. Londoño discussed will go here once the list is provided.</p>
+            </div>
+            <a href="#" class="appearance-listen btn btn-accent" target="_blank" rel="noopener noreferrer" aria-label="Listen to episode 4">
+              Listen <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="appearance-card" role="listitem">
+            <div class="appearance-num" aria-hidden="true">05</div>
+            <div class="appearance-body">
+              <div class="appearance-meta">
+                <span class="appearance-show">Show Name — Pending Tara's List</span>
+                <span class="appearance-dot" aria-hidden="true">·</span>
+                <span class="appearance-date">2023</span>
+              </div>
+              <h3 class="appearance-title">Episode title or topic to be added</h3>
+              <p class="appearance-desc">A brief description of the episode and what Dr. Londoño discussed will go here once the list is provided.</p>
+            </div>
+            <a href="#" class="appearance-listen btn btn-accent" target="_blank" rel="noopener noreferrer" aria-label="Listen to episode 5">
+              Listen <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="appearance-card" role="listitem">
+            <div class="appearance-num" aria-hidden="true">06</div>
+            <div class="appearance-body">
+              <div class="appearance-meta">
+                <span class="appearance-show">Show Name — Pending Tara's List</span>
+                <span class="appearance-dot" aria-hidden="true">·</span>
+                <span class="appearance-date">2023</span>
+              </div>
+              <h3 class="appearance-title">Episode title or topic to be added</h3>
+              <p class="appearance-desc">A brief description of the episode and what Dr. Londoño discussed will go here once the list is provided.</p>
+            </div>
+            <a href="#" class="appearance-listen btn btn-accent" target="_blank" rel="noopener noreferrer" aria-label="Listen to episode 6">
+              Listen <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="appearance-card" role="listitem">
+            <div class="appearance-num" aria-hidden="true">07</div>
+            <div class="appearance-body">
+              <div class="appearance-meta">
+                <span class="appearance-show">Show Name — Pending Tara's List</span>
+                <span class="appearance-dot" aria-hidden="true">·</span>
+                <span class="appearance-date">2023</span>
+              </div>
+              <h3 class="appearance-title">Episode title or topic to be added</h3>
+              <p class="appearance-desc">A brief description of the episode and what Dr. Londoño discussed will go here once the list is provided.</p>
+            </div>
+            <a href="#" class="appearance-listen btn btn-accent" target="_blank" rel="noopener noreferrer" aria-label="Listen to episode 7">
+              Listen <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="appearance-card" role="listitem">
+            <div class="appearance-num" aria-hidden="true">08</div>
+            <div class="appearance-body">
+              <div class="appearance-meta">
+                <span class="appearance-show">Show Name — Pending Tara's List</span>
+                <span class="appearance-dot" aria-hidden="true">·</span>
+                <span class="appearance-date">2023</span>
+              </div>
+              <h3 class="appearance-title">Episode title or topic to be added</h3>
+              <p class="appearance-desc">A brief description of the episode and what Dr. Londoño discussed will go here once the list is provided.</p>
+            </div>
+            <a href="#" class="appearance-listen btn btn-accent" target="_blank" rel="noopener noreferrer" aria-label="Listen to episode 8">
+              Listen <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="appearance-card" role="listitem">
+            <div class="appearance-num" aria-hidden="true">09</div>
+            <div class="appearance-body">
+              <div class="appearance-meta">
+                <span class="appearance-show">Show Name — Pending Tara's List</span>
+                <span class="appearance-dot" aria-hidden="true">·</span>
+                <span class="appearance-date">2022</span>
+              </div>
+              <h3 class="appearance-title">Episode title or topic to be added</h3>
+              <p class="appearance-desc">A brief description of the episode and what Dr. Londoño discussed will go here once the list is provided.</p>
+            </div>
+            <a href="#" class="appearance-listen btn btn-accent" target="_blank" rel="noopener noreferrer" aria-label="Listen to episode 9">
+              Listen <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="appearance-card" role="listitem">
+            <div class="appearance-num" aria-hidden="true">10</div>
+            <div class="appearance-body">
+              <div class="appearance-meta">
+                <span class="appearance-show">Show Name — Pending Tara's List</span>
+                <span class="appearance-dot" aria-hidden="true">·</span>
+                <span class="appearance-date">2022</span>
+              </div>
+              <h3 class="appearance-title">Episode title or topic to be added</h3>
+              <p class="appearance-desc">A brief description of the episode and what Dr. Londoño discussed will go here once the list is provided.</p>
+            </div>
+            <a href="#" class="appearance-listen btn btn-accent" target="_blank" rel="noopener noreferrer" aria-label="Listen to episode 10">
+              Listen <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="podcast-cta" aria-labelledby="podcast-cta-heading">
+      <div class="container">
+        <div class="podcast-cta-inner">
+          <h2 class="section-title" id="podcast-cta-heading">
+            Want Dr. Diana<br /><em>on Your Show?</em>
+          </h2>
+          <p>Dr. Londoño is available for podcast interviews, media features, and speaking engagements on emotional health, intimacy, nervous system science, and love as medicine.</p>
+          <a href="index.html#contact" class="btn btn-primary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p class="footer-logo-name">Dr. Diana Londoño</p>
+          <p class="footer-tagline">Physician · Speaker · Thought Leader<br />Where medicine meets connection.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#wave">The Method</a></li>
+            <li><a href="index.html#services">Work With Me</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-external">
+          <a href="https://www.healthgrades.com/physician/dr-diana-londono-3n9sd" target="_blank" rel="noopener noreferrer" class="footer-link">Healthgrades Reviews</a>
+          <a href="https://www.cityofhope.org/diana-londono" target="_blank" rel="noopener noreferrer" class="footer-link">City of Hope Profile</a>
+          <a href="index.html#contact" class="footer-link footer-link-cta">Book Dr. Diana</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy; <span id="footer-year"></span> Dr. Diana Londoño MD — All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
