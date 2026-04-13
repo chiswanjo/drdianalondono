@@ -3,36 +3,35 @@
    Brand Bible: Dr. Diana Londoño
    ======================================== */
 :root {
-  /* ── Brand Palette ── */
-  --teal:       #537b7f;   /* Deep Teal Sage   — primary */
-  --navy:       #123860;   /* Midnight Navy    — text/depth */
-  --ivory:      #f4f1ec;   /* Soft Ivory Mist  — backgrounds */
-  --aqua:       #bce1dd;   /* Serene Aqua      — accents */
-  --eucalyptus: #768f8f;   /* Muted Eucalyptus — secondary */
+  /* ── Brand Palette (navy-free, teal-forward) ── */
+  --teal:       #537b7f;   /* Deep Teal Sage      — primary */
+  --teal-dark:  #3d5e61;   /* Darker Teal         — hover states */
+  --teal-deep:  #2a4446;   /* Deepest Teal        — hero / footer / authority */
+  --ivory:      #f4f1ec;   /* Soft Ivory Mist     — backgrounds */
+  --white:      #ffffff;
+  --aqua:       #bce1dd;   /* Serene Aqua         — accents / highlights */
+  --aqua-light: #e4f5f3;   /* Light Aqua          — soft section tints */
+  --eucalyptus: #768f8f;   /* Muted Eucalyptus    — secondary */
   --gold:       #F2C641;   /* Warm Sandstone Gold — CTAs */
 
   /* ── Semantic Tokens ── */
-  --bg-primary:   #0d1e2e;        /* dark hero / footer: deep navy base */
+  --bg-primary:   #2a4446;   /* hero / footer — deep teal, not navy */
   --bg-secondary: var(--ivory);
   --bg-card:      #ffffff;
-  --bg-card-dark: #162d42;
-  --bg-wave:      var(--navy);
-  --bg-problem:   var(--ivory);
+  --bg-card-dark: #3a5a5e;
 
   --text-primary:   var(--ivory);
-  --text-dark:      var(--navy);
-  --text-secondary: #4a5e6a;
-  --text-muted:     #8a9ba8;
+  --text-dark:      var(--teal-deep);
+  --text-secondary: #4a6466;
+  --text-muted:     #8aabae;
 
   --accent:       var(--gold);
   --accent-light: #f7d97a;
   --accent-dark:  #c9a12a;
-  --brand-teal:   var(--teal);
-  --brand-aqua:   var(--aqua);
 
   --border:         rgba(83, 123, 127, 0.22);
-  --border-dark:    rgba(255,255,255,0.09);
-  --border-light:   rgba(18, 56, 96, 0.14);
+  --border-dark:    rgba(255,255,255,0.12);
+  --border-light:   rgba(83, 123, 127, 0.18);
 
   /* ── Typography (brand bible spec) ── */
   --font-display: 'Playfair Display', Georgia, serif;
@@ -101,7 +100,7 @@ ul  { list-style: none; }
   font-size: clamp(2.2rem, 4.5vw, 3.8rem);
   font-weight: 600;
   line-height: 1.1;
-  color: var(--navy);
+  color: var(--teal-deep);
   margin-bottom: 1.2rem;
 }
 
@@ -154,7 +153,7 @@ ul  { list-style: none; }
 
 .btn-primary {
   background: var(--gold);
-  color: var(--navy);
+  color: var(--teal-deep);
   border-color: var(--gold);
 }
 .btn-primary:hover {
@@ -197,7 +196,7 @@ ul  { list-style: none; }
   transition: color 0.2s ease;
   display: inline-block;
 }
-.text-link:hover { color: var(--navy); }
+.text-link:hover { color: var(--teal-deep); }
 
 /* ========================================
    NAVIGATION
@@ -290,7 +289,7 @@ ul  { list-style: none; }
   margin-left: 0.5rem;
   white-space: nowrap;
 }
-.nav-cta:hover { background: var(--gold); color: var(--navy); }
+.nav-cta:hover { background: var(--gold); color: var(--teal-deep); }
 
 .nav-toggle {
   display: none;
@@ -345,9 +344,9 @@ ul  { list-style: none; }
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(13,30,46,0.6) 0%,
-    rgba(13,30,46,0.65) 50%,
-    rgba(13,30,46,0.9) 100%
+    rgba(42,68,70,0.6) 0%,
+    rgba(42,68,70,0.65) 50%,
+    rgba(42,68,70,0.9) 100%
   );
 }
 
@@ -419,10 +418,10 @@ ul  { list-style: none; }
    AS SEEN IN
    ======================================== */
 .as-seen-in {
-  background: var(--navy);
+  background: var(--teal-deep);
   padding: 2.4rem 0;
   overflow: hidden;
-  border-top: 1px solid rgba(255,255,255,0.06);
+  border-top: 1px solid rgba(255,255,255,0.15);
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
@@ -486,7 +485,7 @@ ul  { list-style: none; }
 }
 
 .problem-text .section-eyebrow { color: var(--teal); }
-.problem-text .section-title   { color: var(--navy); }
+.problem-text .section-title   { color: var(--teal-deep); }
 .problem-text .section-title em { color: var(--teal); }
 
 .problem-text p {
@@ -495,7 +494,7 @@ ul  { list-style: none; }
   line-height: 1.8;
   margin-bottom: 1rem;
 }
-.problem-text strong { color: var(--navy); font-weight: 700; }
+.problem-text strong { color: var(--teal-deep); font-weight: 700; }
 
 .problem-cards {
   display: flex;
@@ -526,7 +525,7 @@ ul  { list-style: none; }
   font-family: var(--font-display);
   font-size: 1.15rem;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--teal-deep);
   margin-bottom: 0.4rem;
 }
 
@@ -541,7 +540,7 @@ ul  { list-style: none; }
    ======================================== */
 .wave-section {
   padding: var(--section-pad) 0;
-  background: var(--navy);
+  background: var(--teal-deep);
 }
 
 .wave-section .section-eyebrow { color: var(--aqua); }
@@ -573,7 +572,7 @@ ul  { list-style: none; }
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
-.wave-pillar:hover { background: #1a3a56; }
+.wave-pillar:hover { background: var(--bg-card-dark); }
 .wave-pillar:hover::after { transform: scaleX(1); }
 
 .wave-letter {
@@ -624,7 +623,7 @@ ul  { list-style: none; }
 }
 .phase-card.featured {
   border-top: 2px solid var(--gold);
-  background: #1a3a56;
+  background: var(--bg-card-dark);
 }
 
 .phase-num {
@@ -703,7 +702,7 @@ ul  { list-style: none; }
 }
 
 .services .section-eyebrow { color: var(--teal); }
-.services .section-title   { color: var(--navy); }
+.services .section-title   { color: var(--teal-deep); }
 .services .section-title em { color: var(--teal); }
 .services .section-subtitle { color: var(--text-secondary); }
 
@@ -750,7 +749,7 @@ ul  { list-style: none; }
   font-family: var(--font-display);
   font-size: 1.4rem;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--teal-deep);
   margin-bottom: 0.9rem;
   line-height: 1.25;
 }
@@ -839,7 +838,7 @@ ul  { list-style: none; }
 .about-content-col { padding-top: 1rem; }
 
 .about-content-col .section-eyebrow { color: var(--teal); }
-.about-content-col .section-title   { color: var(--navy); }
+.about-content-col .section-title   { color: var(--teal-deep); }
 .about-content-col .section-title em { color: var(--teal); }
 
 .about-body { margin-bottom: 2rem; }
@@ -849,7 +848,7 @@ ul  { list-style: none; }
   line-height: 1.8;
   margin-bottom: 1rem;
 }
-.about-body strong { color: var(--navy); font-weight: 700; }
+.about-body strong { color: var(--teal-deep); font-weight: 700; }
 .about-body em { color: var(--teal); font-style: italic; }
 
 .education-block {
@@ -862,7 +861,7 @@ ul  { list-style: none; }
   font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--teal-deep);
   margin-bottom: 1rem;
   letter-spacing: 0.04em;
 }
@@ -873,7 +872,7 @@ ul  { list-style: none; }
   line-height: 1.5;
 }
 .edu-list strong {
-  color: var(--navy);
+  color: var(--teal-deep);
   font-weight: 700;
 }
 
@@ -893,7 +892,7 @@ ul  { list-style: none; }
   font-size: clamp(1.5rem, 3.2vw, 2.4rem);
   font-weight: 500;
   font-style: italic;
-  color: var(--navy);
+  color: var(--teal-deep);
   line-height: 1.45;
   margin-bottom: 1.5rem;
 }
@@ -918,7 +917,7 @@ ul  { list-style: none; }
 }
 
 .video-testimonials .section-eyebrow { color: var(--teal); }
-.video-testimonials .section-title   { color: var(--navy); }
+.video-testimonials .section-title   { color: var(--teal-deep); }
 .video-testimonials .section-title em { color: var(--teal); }
 .video-testimonials .section-subtitle { color: var(--text-secondary); }
 
@@ -949,7 +948,7 @@ ul  { list-style: none; }
 .video-thumb-placeholder {
   width: 100%;
   padding-bottom: 56.25%; /* 16:9 */
-  background: linear-gradient(135deg, var(--navy) 0%, #1e4a6e 100%);
+  background: linear-gradient(135deg, var(--teal-deep) 0%, #3a5a5e 100%);
   position: relative;
   transition: filter 0.3s ease;
 }
@@ -972,7 +971,7 @@ ul  { list-style: none; }
 }
 .play-circle svg {
   width: 20px; height: 20px;
-  color: var(--navy);
+  color: var(--teal-deep);
   margin-left: 3px;
 }
 .video-thumb-btn:hover .play-circle {
@@ -992,7 +991,7 @@ ul  { list-style: none; }
   font-size: 0.95rem;
   font-style: italic;
   font-weight: 500;
-  color: var(--navy);
+  color: var(--teal-deep);
   line-height: 1.4;
 }
 
@@ -1011,7 +1010,7 @@ ul  { list-style: none; }
 .video-modal-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(13,30,46,0.9);
+  background: rgba(42,68,70,0.9);
   cursor: pointer;
 }
 
@@ -1019,7 +1018,7 @@ ul  { list-style: none; }
   position: relative;
   z-index: 1;
   width: min(560px, 94vw);
-  background: var(--navy);
+  background: var(--teal-deep);
   border-radius: 4px;
   overflow: hidden;
   box-shadow: 0 24px 60px rgba(0,0,0,0.5);
@@ -1089,7 +1088,7 @@ ul  { list-style: none; }
   font-size: 1.3rem;
   font-style: italic;
   font-weight: 500;
-  color: var(--navy);
+  color: var(--teal-deep);
   line-height: 1.45;
 }
 
@@ -1182,7 +1181,7 @@ ul  { list-style: none; }
    ======================================== */
 .contact-section {
   padding: var(--section-pad) 0;
-  background: var(--navy);
+  background: var(--teal-deep);
 }
 
 .contact-section .section-eyebrow { color: var(--aqua); }
@@ -1250,7 +1249,7 @@ ul  { list-style: none; }
   padding-right: 2.8rem;
   cursor: pointer;
 }
-.form-group select option { background: var(--navy); color: var(--ivory); }
+.form-group select option { background: var(--teal-deep); color: var(--ivory); }
 .form-group textarea { resize: vertical; min-height: 110px; }
 .form-group input::placeholder,
 .form-group select::placeholder,
@@ -1272,9 +1271,9 @@ ul  { list-style: none; }
    FOOTER
    ======================================== */
 .site-footer {
-  background: #0a1929;
+  background: #1e3436;
   padding: 4rem 0 2rem;
-  border-top: 1px solid rgba(255,255,255,0.06);
+  border-top: 1px solid rgba(255,255,255,0.15);
 }
 
 .footer-top {
@@ -1332,7 +1331,7 @@ ul  { list-style: none; }
   transition: all 0.25s ease;
   border-radius: 2px;
 }
-.footer-link-cta:hover { background: var(--gold); color: var(--navy); }
+.footer-link-cta:hover { background: var(--gold); color: var(--teal-deep); }
 
 .footer-bottom { text-align: center; }
 .footer-bottom p {
@@ -1387,7 +1386,7 @@ ul  { list-style: none; }
     top: 0; right: 0;
     width: min(320px, 85vw);
     height: 100dvh;
-    background: var(--navy);
+    background: var(--teal-deep);
     border-left: 1px solid rgba(255,255,255,0.08);
     flex-direction: column;
     align-items: flex-start;
